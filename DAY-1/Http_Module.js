@@ -1,7 +1,9 @@
 var http = require('http');
 var url = require('url');
 
-http.createServer(function (req, res) {
+
+
+http.createServer(function (req, res) {                         //above line show how to create server
     res.writeHead(200, {  'Content-Type': 'text/html'});
 
     var parseUrl = url.parse(req.url, true);
